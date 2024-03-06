@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="vue3.css">
 </head>
 <body>
     <script src="//unpkg.com/vue@3/dist/vue.global.js"></script>
     <div id="app">
-
+      <p>123</p>
+      obj.a = {{obj.a}} ,obj.b = {{obj.b}}
 <div>
-    obj.a = {{obj.a}} ,obj.b = {{obj.b}}
 </div>
 <button @click="obj.a = Math.ceil(Math.random() * 100)">add</button>
 <button @click="obj.b = Math.ceil(Math.random() * 100)">b</button>

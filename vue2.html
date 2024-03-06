@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+</head>
+<body>
+        <div id="app">
+            <div>
+                obj.a = {{obj.a}} ,obj.b = {{obj.b}}
+            </div>
+            <button @click="obj.a = Math.ceil(Math.random() * 100)">add</button>
+            <button @click="obj.b = Math.ceil(Math.random() * 100)">设置B(先占这个会不起效果)</button>
+            <button @click="$set(obj,'b',Math.ceil(Math.random() * 100)) ">b2</button>
+        </div>
+        <script>
+            const ctx = new Vue({
+                el: '#app',
+                data: {
+                    obj: {
+                        a: 1
+                    }
+                }
+            })
+        </script>
+</body>
+</html>

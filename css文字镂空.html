@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+body {
+    --bg: url(./bg2.jpg) no-repeat center/cover;
+    height:100vh;
+    background: var(--bg);
+}
+
+.modal {
+ 
+}
+.modal h1{
+    background: var(--bg);
+    background-clip:text;
+    -webkit-background-clip:text;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-stroke: 2px #fff;
+    -webkit-text-stroke: 2px #fff;
+    color:transparent;
+    font-weight: 900;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="modal w-full h-full bg-black bg-opacity-70">
+        <h1 class="text-[12vw]">AMSTERDAM</h1>
+    </div>
+</body>
+</html>

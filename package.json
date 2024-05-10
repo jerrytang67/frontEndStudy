@@ -1,8 +1,0 @@
-{
-	"type": "module",
-	"dependencies": {
-		"@vueuse/core": "^10.9.0",
-		"lodash": "^4.17.21",
-		"typescript": "^5.4.4"
-	}
-}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <script src="//unpkg.com/vue@3/dist/vue.global.js"></script>
+    <div id="app">
+      <div class="grid grid-cols-10 gap-4">
+        <div v-for="x in 141" class="flex flex-col items-center"> 
+          <img
+            :src="`https://imgcache.qq.com/open/qcloud/tim/assets/emoji/emoji_${x}@2x.png`"
+            :alt="x"
+            class="size-12"
+          />
+          <span>{{x}}</span>
+        </div>
+      </div>
+    </div>
+    <script>
+      const { createApp, h } = Vue
+      const ctx = createApp({
+        data() {
+          return {}
+        },
+      }).mount('#app')
+    </script>
+  </body>
+</html>
